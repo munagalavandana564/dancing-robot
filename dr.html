@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>robot</title>
+</head>
+<body>
+   <h1>Dancing Robot</h1>
+    <div class="container"> 
+    
+    <div class="robo">
+        <div class="face">
+            <div class="eye1"></div>
+            <div class="eye2"></div></div>
+        
+        <div class="body">
+            <div class="hand1"></div>
+            <div class="hand2"></div>
+            <div class="leg1"></div>
+            <div class="leg2"></div>
+        </div>
+    </div>
+    </div>
+   </body>
+   </html>
+   <style>
+   body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    position: relative;
+    left:40%;
+}
+.container{
+    width:100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform is ease-in-out;
+}
+.face{
+position: relative;
+height: 100px;
+width:130px;
+border-radius: 50% 50% 0px 0px;
+background-color: red;
+margin-bottom: 10px;
+position: relative;
+height: 100px;
+width:130px;
+border-radius: 50% 50% 0px 0px;
+background-color: red;
+margin-bottom: 10px;
+}
+.eye1{
+width:10px;
+height:10px;
+position: absolute;
+border-radius: 50%;
+background-color: black;
+top: 50px;
+left:15px;
+
+}
+.eye1:hover{
+    transform: scale(2)
+}
+.eye2{
+    width:10px;
+    height:10px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: black;
+    top: 50px;
+    right:15px;
+}
+.eye2:hover{
+    transform: scale(2)
+}
+.body{
+    position:relative;
+    height: 150px;
+    width:130px;
+    border-radius: 2px 2px 30% 30%;
+    background-color:red;
+    
+}
+
+.hand1{
+    position:absolute;
+    width:30px;
+    height:100px;
+    border-radius: 30% 30% 30% 30%;
+    background-color:red;
+    left:140px;
+    
+}
+.hand1:hover{
+    transform: skew(90deg)
+}
+.hand2{
+    position:absolute;
+    width:30px;
+    height:100px;
+    border-radius: 30% 30% 30% 30%;
+    background-color:red;
+    right:140px;
+}
+.hand2:hover{
+    transform: skew(90deg)
+}
+.leg1{
+    position:absolute;
+    width:30px;
+    height:60px;
+    border-radius: 30% 30% 30% 30%;
+    background-color:red;
+    left:90px;
+    top: 120px;
+    padding-top:5px;
+    
+}
+.leg1:hover{
+    transform: skew(90deg)
+}
+.leg2{
+    position:absolute;
+    width:30px;
+    height:60px;
+    border-radius: 30% 30% 30% 30%;
+    background-color:red;
+    right:90px;
+    top: 120px;
+    padding-top: 5px;
+}
+.leg2:hover{
+    transform: skew(90deg)
+}
+</style>
